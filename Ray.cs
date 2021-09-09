@@ -10,10 +10,7 @@ public class Ray : MonoBehaviour
         if (collision.gameObject.name.Equals("Unit"))
         {
             Player player = collision.GetComponent<Player>();
-           
             player.TakeDamage(Damage);
-           
-
         }
     }
 

@@ -6,12 +6,12 @@ public class Heal : MonoBehaviour
 {
     public int heal;
 
-    // Update is called once per frame
+   
 
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerStay2D (Collider2D other)
     {
-        if (other.CompareTag("Unit"))
+        if (other.gameObject.name.Equals("Unit"))
         {
             Player player = other.GetComponent<Player>();
 

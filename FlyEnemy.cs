@@ -13,6 +13,7 @@ public class FlyEnemy : MonoBehaviour
     public float startTimeBtwShots;
     public float shootingDistance;
 
+
     public GameObject projectile;
 
     void Start()
@@ -55,5 +56,6 @@ public class FlyEnemy : MonoBehaviour
     {
         Destroy(gameObject);
         Player.Coins += 15;
+        EnergyVampire.VampiricScore++;
     }
 }

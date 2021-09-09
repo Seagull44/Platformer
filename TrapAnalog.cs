@@ -22,9 +22,9 @@ public class TrapAnalog : MonoBehaviour
     IEnumerator RayActive()
     {
         bc.enabled = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         ray.SetActive(!ray.activeSelf);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         ray.SetActive(!ray.activeSelf);
         bc.enabled = true;
 

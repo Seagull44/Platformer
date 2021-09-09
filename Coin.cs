@@ -22,20 +22,11 @@ public class Coin : MonoBehaviour
         Physics2D.IgnoreLayerCollision(coinObject, coinObject, true);
     }
 
-    private void OnTriggerEnter2D (Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-
-        Player.Coins ++;
-        Destroy(gameObject);
-
-        
-    }
-  /*  private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        if (collision.gameObject.tag == "Unit") 
         Player.Coins++;
         Destroy(gameObject);
-
-    }*/
+    }
 }
+    
+    
